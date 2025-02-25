@@ -1,0 +1,170 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Century", serif;
+    color: white;
+}
+
+div{
+    margin: 0 60px;
+}
+
+header ,footer{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+nav ,footer{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    font-size: small;
+}
+
+header a , footer a{
+    color: white;
+    float: right;
+    text-decoration: none; /* Usunięcie domyślnego podkreślenia dla linków */
+    align-items: center;
+}
+
+body {
+    background-image: url("xboxb.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
+.mains {
+    margin: 30px 40px 30px;
+    color: white;
+    overflow: auto;
+    text-align: center;
+}
+
+.mains p {
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.mains table {
+    margin: 10px auto 0 ;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-collapse: collapse;
+    min-width: 600px;
+    border-radius: 5px;
+}
+
+.mains th, td {
+    /*border: 1px solid #ddd;*/
+    text-align: left;
+    padding: 10px 10px;
+
+}
+
+.mains th {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mains #logged {
+    color: black;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.mains #info {
+    background-color: darkgreen;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 15px auto;
+    width: auto;
+    height: 20px;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+td button{
+    display: inline;
+}
+
+
+
+.mainss {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.mainss form {
+    text-align: left;
+    color: white;
+}
+
+.mainss label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.mainss input[type="text"], .mainss input[type="number"], .mainss input[type="date"], .mainss textarea,  select{
+    width: 100%; /* Ustaw szerokość na 100% */
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.mainss textarea {
+    height: auto;
+    resize: vertical;
+}
+
+.mainss input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
